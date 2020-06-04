@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Giphy Party!</title>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+            crossorigin="anonymous"
+        />
+    </head>
+
+    <body>
+        <h1 class="display-1 text-center text-light bg-dark">
+            GIPHY Party!
+        </h1>
+        <!-- Form -->
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-8">
+                    <form action="#" class="input-group mt-1 mb-2">
+                        <input
+                            type="text"
+                            class="form-control"
+                            id="searchBox"
+                            placeholder="Enter Search or Submit for Random Gif"
+                        />
+                        <div class="input-group-append">
+                            <input
+                                class="btn btn-outline-success"
+                                type="submit"
+                                id="searchBtn"
+                                value="Search"
+                            />
+                        </div>
+                    </form>
+                    <div class="mt-1 text-center" id="error"></div>
+                    <button
+                        class="btn btn-outline-danger btn-block mb-2 remove"
+                    >
+                        Remove All Gifs
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Form End -->
+        <!-- Gif Container -->
+        <div class="container-fluid">
+            <div class="row mx-1" id="gifs"></div>
+        </div>
+
+        <!-- Linked JS -->
+        <script src="https://unpkg.com/axios/dist/axios.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
